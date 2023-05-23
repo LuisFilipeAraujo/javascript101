@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando Parse</title>
 </head>
+
 <body>
     <h1>Usando Parse</h1>
     <h2>Cheque o console usando f12</h2>
-    
+
     <script>
-        let nota1="8";
-        let nota2="7";
-        let nota3="3";
+        let nota1 = "8";
+        let nota2 = "7";
+        let nota3 = "2";
 
         // CONVERTENDO AS NOTAS DE STRING PARA FLOAT
-        parseFloat(nota1,nota2,nota3);
+        nota1 = parseFloat(nota1);
+        nota2 = parseFloat(nota2);
+        nota3 = parseFloat(nota3);
 
-        media=(nota1+nota2+nota3)/3;
+        let media = (nota1 + nota2 + nota3) / 3;
+
         console.log(media);
 
-        if(media>=6){
+        if (media >= 6) {
             console.log("aprovado");
-        }else{
+        } else {
             console.log("reprovado")
         }
     </script>
 </body>
+
 </html>
