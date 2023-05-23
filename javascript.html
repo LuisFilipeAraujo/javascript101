@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Escrevendo usando document.getElementById('demo').innerHTML";
+</script>
+
+<br>
+
+<script>
+document.write("Escrevendo usando document.write");
+</script>
+
+<br><br><br>
+<button type="button" onclick="document.write('o botão foi clicado')">clique para substituir a pagina</button>
+
+
+<br><br><br>
+<button type="button" onclick="window.alert('o botão foi clicado')">clique para usa o window.alert</button>
+
+
+<br><br><br>
+<button type="button" onclick="console.log('o botão foi clicado')">clique para usa o console.log</button>
+
+<br><br><br>
+<p>JavaScript não possui métodos "print" mas possui o "window.print" para printar a tela</p>
+<button onclick="window.print()">Printar essa página</button>
+</body>
+
+</html>
