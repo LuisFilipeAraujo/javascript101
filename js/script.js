@@ -74,20 +74,33 @@ function maior() {
     </h1>`);
 }
 
+// function parOuImpar() {
+//     let numero = parseInt(prompt("Digite o número: "));
+
+//     var JanelaPopUp = window.open("", "popup", "width=400, height=300");
+
+//     if (num % 2 === 0) {
+//         var num = "O número é par";
+//     } else {
+//         var num = "O número é ímpar";
+//     }
+//     JanelaPopUp.document.write(`<h1>
+//     O Número é = ${numero} <br> 
+//     Portanto ${num} <br><br>
+//     </h1>`);
+// }
+
 function parOuImpar() {
-    let numero = parseInt(prompt("Digite o número: "));
-
-    var JanelaPopUp = window.open("", "popup", "width=400, height=300");
-
-    if (num % 2 === 0) {
-        var num = "O número é par";
+    let num = Number(window.prompt('Digite um número: '))
+    let tipo
+    if (num % 2 == 0) {
+        tipo = '<strong>PAR</strong>'
     } else {
-        var num = "O número é ímpar";
+        tipo = '<strong>ÍMPAR</strong>'
     }
-    JanelaPopUp.document.write(`<h1>
-    O Número é = ${numero} <br> 
-    Portanto ${num} <br><br>
-    </h1>`);
+
+    let res = document.querySelector('section#result')
+    res.innerHTML = `<p>O número ${num} que foi digitado é ${tipo}!</p>`
 }
 
 function vogalOuConsoante() {
