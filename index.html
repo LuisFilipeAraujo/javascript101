@@ -86,9 +86,19 @@
 
         <h1>8-Calculo de fatorial</h1>
 
-        <div class="botao">
-            <button type="button" onclick=calculaFatorial()>clique aqui</button>
-        </div>
+        <section id="entrada">
+            <form action="#" method="get">
+                <p>
+                    <label for="fnum">Número: </label>
+                    <input type="number" name="num" id="fnum" max="21" min="1" placeholder="Número: ">
+                    <!-- Vamos limitar os números entre 1 e 21, pois não existe fatorial de número negativo (0! = 1) e o fatorial de 22 já é um número muito grande para ser representado de forma simples na tela -->
+                    <input type="submit" value="Fatorial" formaction="javascript:fatorial()">
+                </p>
+            </form>
+        </section>
+        <section id="saida">
+            <p>Preencha os dados acima e aperte o botão.</p>
+        </section>
     </div>
 
     <div id="naruto">
