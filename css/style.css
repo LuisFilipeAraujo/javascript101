@@ -3,6 +3,10 @@ h1{
     background-color: rgb(127, 165, 255);
 }
 
+h2{
+    text-align: center;
+}
+
 .botao{
     display: flex;
     justify-content: center;
@@ -22,3 +26,4 @@ h1{
     color: aliceblue;
     font-size: 24px;
 }
+
